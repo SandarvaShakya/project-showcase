@@ -53,8 +53,10 @@ const Card = ({
 				</div>
 				<p className="card__description">{description}</p>
 				<ul className="tag-group">
-					{technologies.map((technology) => (
-						<li className="tag">{technology}</li>
+					{technologies.map((technology, index) => (
+						<li key={index} className="tag">
+							{technology}
+						</li>
 					))}
 				</ul>
 			</div>
